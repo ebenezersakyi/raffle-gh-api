@@ -7,7 +7,12 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 //enable cors
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000", // Replace with your allowed origin
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  })
+);
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded());
