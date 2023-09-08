@@ -9,6 +9,12 @@ const port = process.env.PORT || 4000;
 //enable cors
 app.use(cors());
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded());
+
+// parse application/json
+app.use(bodyParser.json());
+
 // Twilio credentials
 const accountSid = "AC433a6b117e4fd8f57d567940e674a76d";
 const authToken = "52b4f17942646d47edf515e66254a6f2";
