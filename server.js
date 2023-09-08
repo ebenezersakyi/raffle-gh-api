@@ -1,9 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const twilio = require("twilio");
+const cors = require("cors");
 
 const app = express();
 const port = process.env.PORT || 4000;
+
+//enable cors
+app.use(cors());
 
 // Twilio credentials
 const accountSid = "AC433a6b117e4fd8f57d567940e674a76d";
