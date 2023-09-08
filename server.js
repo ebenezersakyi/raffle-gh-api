@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const twilio = require("twilio");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -21,6 +22,9 @@ const authToken = "52b4f17942646d47edf515e66254a6f2";
 const client = new twilio(accountSid, authToken);
 
 app.use(bodyParser.json());
+
+// Set static folder
+app.use(express.static(path.join(__dirname, "public")));
 
 // Define an endpoint to send SMS
 app.post("/send-sms", (req, res) => {

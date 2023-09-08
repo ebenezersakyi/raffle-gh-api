@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Store Locator - Add Store</title>
+  </head>
+  <body>
+    <div class="container my-3">
+      <h1 class="display-4 text-center">
+        Add Store
+      </h1>
+
+      <form id="store-form" class="mb-4">
+        <div class="form-group">
+          <label for="store-id">ID Type</label>
+          <input type="text" id="id-type" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="store-address">ID Number</label>
+          <input type="text" id="id-number" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="store-address">Dimensions</label>
+          <input type="text" id="dimensions" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="store-address">Coordinates 1</label>
+            <input type="text" step="any" id="Longitude-1" placeholder="Longitude" class="form-control" />
+            <input type="text" step="any" id="Latitude-1" placeholder="Latitude" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="store-address">Coordinates 2</label>
+            <input type="text" step="any" id="Longitude-2" placeholder="Longitude" class="form-control" />
+            <input type="text" step="any" id="Latitude-2" placeholder="Latitude" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="store-address">Coordinates 3</label>
+            <input type="number" step="any" id="Longitude-3" placeholder="Longitude" class="form-control" />
+            <input type="number" step="any" id="Latitude-3" placeholder="Latitude" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="store-address">Coordinates 4</label>
+            <input type="number" step="any" id="Longitude-4" placeholder="Longitude" class="form-control" />
+            <input type="number" step="any" id="Latitude-4" placeholder="Latitude" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="store-address">Coordinates 5</label>
+          <input type="number" step="any" id="Longitude-5" placeholder="Longitude" class="form-control" />
+          <input type="number" step="any" id="Latitude-5" placeholder="Latitude" class="form-control" />
+      </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+    </div>
+
+    <div class="container my-3">
+      <h1 class="display-4 text-center">
+        Checkpoints
+      </h1>
+
+      <form id="checkpoints-form" class="mb-4">
+        <div class="form-group">
+            <label for="store-address">Coordinates 1</label>
+            <input type="number" step="any" id="CheckLongitude-1" placeholder="Longitude" class="form-control" />
+            <input type="number" step="any" id="CheckLatitude-1" placeholder="Latitude" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+    </div>
+
+    <div class="container my-3">
+      <h1 class="display-4 text-center">
+        UserLands
+      </h1>
+
+      <form id="userlands-form" class="mb-4">
+        <div class="form-group">
+            <!-- <label for="store-address">Coordinates 1</label> -->
+            <input type="text" step="any" id="IDTYPE" placeholder="Longitude" class="form-control" />
+            <input type="number" step="any" id="IDNUMBER" placeholder="Latitude" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+      <form id="addFollower-form" class="mb-4">
+        <div class="form-group">
+            <label for="store-address">Add Follower</label>
+            <input type="text" step="any" id="Compname" placeholder="name" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+    </div>
+    <div class="container my-3">
+      <h1 class="display-4 text-center">
+        Add Company Info
+      </h1>
+
+      <form method="post" action="/unreadmessagescounter" enctype="application/json" id="estate-form" class="mb-4">
+        <div class="form-group">
+            <!-- <label for="store-address">Coordinates 1</label> -->
+            <input name="userEmail" type="text" step="any" id="userEmail" placeholder="CompanyName" class="form-control" />
+        </div>
+        <div class="form-group">
+          <!-- <label for="store-address">Coordinates 1</label> -->
+          <!-- <input name="house_id" type="text" step="any" id="Followers" placeholder="Followers" class="form-control" /> -->
+      </div>
+        <div class="form-group">
+          <label for="store-address">House 1</label>
+          <input name="houseImage" multiple="multiple" type="file" step="any" id="image" placeholder="Price" class="form-control" />
+          <input type="submit" />
+          <input type="text" step="any" id="Location-1" placeholder="Location" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="store-address">House 2</label>
+          <input type="text" step="any" id="Price-2" placeholder="Price" class="form-control" />
+          <input type="text" step="any" id="Location-2" placeholder="Location" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+
+      <form id="estateInfo-form" class="mb-4">
+        <div class="form-group">
+            <label for="store-address">Esatate Info</label>
+            <input type="text" step="any" id="sendCompanyName" placeholder="CompanyName" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="index.html" class="btn btn-secondary">Back</a>
+      </form>
+    </div>
+    <script src="js/add.js"></script>
+  </body>
+</html>
